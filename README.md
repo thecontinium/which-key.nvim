@@ -404,6 +404,7 @@ Hydra mode is a special mode that keeps the popup open until you hit `<esc>`.
 require("which-key").show({
   keys = "<c-w>",
   loop = true, -- this will keep the popup open until you hit <esc>
+  foreign_keys = true -- unlisted key in the looping popup will be intercepted and do nothing
 })
 ```
 

@@ -210,7 +210,7 @@ function M.check(state, key)
   elseif View.valid() and key == Config.keys.scroll_up then
     View.scroll(true)
     return state.node
-  elseif state.filter.loop then
+  elseif state.filter.loop and state.filter.foreign_keys then
     return -- when looping swallow the key that is not mapped to a node
   end
   M.execute(state, key, node)

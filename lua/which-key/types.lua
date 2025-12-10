@@ -11,6 +11,7 @@
 ---@field update? boolean
 ---@field delay? number
 ---@field loop? boolean
+---@field foreign_keys? boolean
 ---@field defer? boolean don't show the popup immediately. Wait for the first key to be pressed
 ---@field waited? number
 ---@field check? boolean
